@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3D To-Do App with Reminder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="container">
+    <!-- 3D Summary Sidebar -->
+    <aside class="sidebar hidden" id="sidebar">
+      <h2>📋 Task Summary</h2>
+      <ul id="task-summary"></ul>
+    </aside>
+
+    <!-- Main To-Do Section -->
+    <main class="main">
+      <h1>📝 3D To-Do List</h1>
+      <div class="input-area">
+        <input id="task-input" type="text" placeholder="Enter a task..." />
+        <input id="reminder-time" type="datetime-local" />
+        <button id="add-task">Add Task</button>
+        <button id="clear-all">Clear All</button>
+        <button id="theme-toggle">🌙</button>
+      </div>
+      <ul id="task-list"></ul>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
